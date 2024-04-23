@@ -1,29 +1,456 @@
 * {
- margin: 0;
- padding: 0;
- box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
 html, body {
- height: 100%
+  height: 100%;
+  background-color: #e4000f;
+  color: white;
 }
+
 h1, h2, h3, h4, h5, h6, p {
- margin-bottom: 16px
+  margin-bottom: 16px;
 }
 
 nav {
-    height: 50px;
-    background-color: black;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-
-    
+  height: 50px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
+
+nav .image {
+  background-image: url(../images/nintendo-symbol.jpg);
+  height: 50px;
+  width: 50px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 nav a {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: #e4000f;
 }
 
 #app {
-    padding: 30px;
+  padding: 50px;
 }
+
+
+.people{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border-color: white;
+    border-style: solid;
+    border-width: 3px;
+    /* background-color: black; */
+    .people-holder{
+        display: flex;
+        /* justify-content: center;
+        align-items: center; */
+        /* height: 1200px; */
+        background-color: black;
+        h1{
+          color: #e4000f;
+        }
+        
+        /* //background-color: black; */
+        .left{
+            width: 50%;
+            height: 100%;
+            /* background-color: blue; */
+            
+           
+            .mario{
+                background-image: url(../images/mario.jpg);
+                height: 300px;
+                width: 300px;
+                /* background-color: blueviolet; */
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                margin: 15px;
+                h2{
+                  color: #e4000f;
+                  padding: 10px;
+                }
+                
+            }
+            .mario-info{
+              padding: 15px;
+              /* background-color: gray; */
+              color: lightblue;
+            }
+            .luigi{
+              background-image: url(../images/luigi.webp);
+              height: 300px;
+              width: 300px;
+              /* background-color: blueviolet; */
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: cover;
+              margin: 15px;
+              h2{
+                color: #e4000f;
+                padding: 10px;
+              }
+            }
+            .luigi-info{
+              padding: 15px;
+              /* background-color: gray; */
+              color: lightblue;
+            }
+            .yoshi{
+              background-image: url(../images/yoshi.jpg);
+              height: 300px;
+              width: 300px;
+              /* background-color: blueviolet; */
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: cover;
+              margin: 15px;
+              h2{
+                color: #e4000f;
+                padding: 10px;
+              }
+            }
+            .yoshi-info{
+              padding: 15px;
+              /* background-color: gray; */
+              color: lightblue;
+            }
+        }
+
+
+        .right{
+            width: 50%;
+            height: 100%;
+            /* background-color: aqua; */
+            /* margin-top: 17px; */
+            .bowser{
+              background-image: url(../images/bowser.webp);
+              height: 300px;
+              width: 300px;
+              background-color: blueviolet;
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: cover;
+              margin: 15px;
+              h2{
+                color: #e4000f;
+                padding: 10px;
+              }
+            }
+            .bowser-info{
+              padding: 15px;
+              /* background-color: gray; */
+              color: lightblue;
+            }
+            .bones{
+              background-image: url(../images/dry-bones.webp);
+              height: 300px;
+              width: 300px;
+              /* background-color: blueviolet; */
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: cover;
+              margin: 15px;
+              h2{
+                color: #e4000f;
+                padding: 10px;
+              }
+            }
+            .bones-info{
+              padding: 13px;
+              /* background-color: gray; */
+              color: lightblue;
+            }
+           .toad{
+            background-image: url(../images/toad.jpg);
+            height: 300px;
+            width: 300px;
+            /* background-color: blueviolet; */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 15px;
+            h2{
+              color: #e4000f;
+              padding: 10px;
+            }
+            }
+            .toad-info{
+              padding: 15px;
+              /* background-color: gray; */
+              color: lightblue;
+            }
+        }
+    }
+}
+
+
+.games{
+  /* justify-content: center;
+  align-items: center;
+  display: flex; */
+  /* margin: 0 auto; */
+  max-height: 100%;
+  background-color: black;
+ 
+  .games-holder{
+    height: 100%;
+    background-color: black;
+    border-color: white;
+    border-style: solid;
+    border-width: 3px;
+    .g1-holder{
+      justify-content: center;
+      align-items: center; 
+      margin: 0 auto;
+      h1{
+        margin: 20px;
+        color: #e4000f;
+      }
+
+      /* display: flex; */
+      .g1{
+        background-image: url(../images/arcade.avif);
+        height: 400px;
+        width: 400px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 20px;
+      }
+      .g1-info{
+        margin: 20px;
+       
+      }
+    }
+    .g2-holder{
+        padding-top: 25px;
+        h1{
+          margin: 20px;
+          color: #e4000f;
+        }
+      .g2{
+        background-image: url(../images/mariogame.jpg);
+        height: 400px;
+        width: 400px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 20px;
+      }
+      .g2-info{
+        margin: 20px;
+      }
+    }
+    .g3-holder{
+      padding-top: 25px;
+      h1{
+        margin: 20px;
+        color: #e4000f;
+      }
+      .g3{
+        background-image: url(../images/mario\ kart.avif);
+        height: 400px;
+        width: 400px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 20px;
+      }
+      .g3-info{
+        margin: 20px;
+      }
+    }
+  }
+}
+
+
+.nintendo{
+  height: 100%;
+  background-color: black;
+  border-color: white;
+    border-style: solid;
+    border-width: 3px;
+  .nintendo-holder{
+    .nintendo-imgs{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .p1{
+        background-image: url(../images/ds.jpg);
+        height: 400px;
+        width: 400px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      
+      }
+      .p2{
+        background-image: url(../images/logo.jpg);
+        height: 400px;
+        width: 400px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .p3{
+        background-image: url(../images/switch.webp);
+        height: 400px;
+        width: 400px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    }
+    .questionaire{
+      /* margin: 0 auto; */
+      /* justify-content: center;
+      align-items: center; */
+      display: flex;
+      flex-direction: column;
+      .head{
+        color: #e4000f;
+      }
+
+  
+      margin: 15px;
+      padding: 20px;
+      .q1{
+        h1{
+          text-decoration: underline;
+        }
+        
+      }
+      .a1 {
+
+      }
+      .q2{
+        h1{
+          text-decoration: underline;
+        }
+      }
+      .a2 {
+
+      }
+      .q3{
+        h1{
+          text-decoration: underline;
+        }
+      }
+      .a3 {
+
+      }
+      .q4{
+        h1{
+          text-decoration: underline;
+        }
+      }
+      .a4 {
+        h1{
+          text-decoration: underline;
+        }
+      }
+      .q5{
+        h1{
+          text-decoration: underline;
+        }
+      }
+      .a5 {
+
+      }
+    }
+  }
+}
+
+
+.home{
+  height: 100%;
+  background-color: black;
+  border-style: solid;
+  border-color: white;
+  
+  border-width: 3px;
+  padding-left: 10px;
+  padding-top: 10px;
+  h1{
+    color: #e4000f;
+  }
+  .home-holder{
+    margin: 0 auto;
+    .ad-holder{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 20px;
+      .ad1{
+        background-image: url(../images/ad1.png); 
+        height: 400px;
+        width: 400px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .ad1-info{
+        width: 300px;
+        padding-left: 20px;
+
+      }
+    }
+      
+
+    .ad2-holder{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 20px;
+      .ad2{
+        background-image: url(../images/ad2.jpg);
+        height: 400px;
+        width: 400px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: white;
+      }
+      .ad2-info{
+        width: 300px;
+        padding-left: 20px;
+      }
+    }
+    .ad3-holder{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      .ad3{
+        background-image: url(../images/ad3.webp);
+        height: 400px;
+        width: 400px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: white;
+      }
+      .ad3-info{
+        width: 300px;
+        padding-left: 20px;
+      }
+    } 
+    }
+
+  
+}
+/*# sourceMappingURL=styles.css.map */

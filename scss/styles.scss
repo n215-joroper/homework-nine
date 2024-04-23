@@ -4,8 +4,38 @@
  box-sizing: border-box;
 }
 html, body {
- height: 100%
+ height: 100%;
+ background-color: #e4000f;
+ color: white;
 }
 h1, h2, h3, h4, h5, h6, p {
  margin-bottom: 16px
+}
+
+
+nav {
+    height: 50px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    
+}
+
+nav .image{
+    background-image: url(../images/nintendo-symbol.jpg);
+    height: 50px;
+    width: 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+nav a {
+    text-decoration: none;
+    color: #e4000f;
+}
+
+#app {
+    padding: 50px;
 }
